@@ -1,0 +1,227 @@
+body {
+  background-image: url('./sasha-freemind-cm0eSVxdLDg-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  font-family: 'Poppins', sans-serif;
+}
+
+#navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px 3%;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+#navBar img {
+  float: left;
+  max-width: 200px;
+  height: 100%;
+}
+
+.welcomeText {
+  font-size: 15pt;
+  text-align: center;
+  font-style: normal;
+  margin: 50px auto;
+  color: white;
+}
+
+.seatMapGreeting {
+  font-family: 'Libre Baskerville', serif;
+  font-style: oblique;
+  text-align: center;
+  margin: 200px auto;
+  color: white;
+}
+
+.exploreNow {
+  padding-top: 50px;
+  max-width: 200px;
+  padding: 25px auto;
+}
+
+
+#bottomNavbar {
+  padding-top: 200px;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 10px 5%;
+  color: white;
+  border-bottom: 1px white;
+}
+
+.bottomNavigation {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+#copyright {
+  color: white;
+  margin: 5px;
+  font-size: xx-small;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 25%;
+}
+.icons img {
+  margin: 15px;
+  cursor: pointer;
+}
+
+
+
+/* Typography CSS */
+
+h2 {
+  font-size: 60px;
+  margin: 0px 0px;
+  color: #ffffff;
+}
+
+h3 {
+  font-weight: lighter;
+  font-style: normal;
+  font-size: 16pt;
+  text-align: center;
+}
+
+h4 {
+  color: white;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+#optionGrid {
+  margin: 0px 5%;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-areas: 
+    ". upgradeSeat searchForFlights .";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 250px;
+}
+
+.optionGridArea {
+  border-radius: 5px;
+  background-image: url('./Map.png');
+  background-color: #274E68;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+}
+
+#upgradeSeat {
+  grid-area: upgradeSeat;
+}
+
+#searchForFlights {
+  grid-area: searchForFlights;
+}
+
+#nextButton {
+  max-width: 30px;
+}
+
+.heading {
+  padding: 15px;
+  height: 25px;
+  color: white;
+  font-size: 18px;
+}
+
+#departingCity {
+  padding: 5px;
+  box-sizing: border-box;
+  position: center;
+  width: 80%;
+  margin: 10px 10%;
+  opacity: .7;
+}
+
+#confirmationNumber {
+  padding: 5px;
+  box-sizing: border-box;
+  position: center;
+  width: 80%;
+  margin: 10px 10%;
+  opacity: .7;
+}
+
+#from {
+  padding: 5px;
+  box-sizing: border-box;
+  position: center;
+  width: 80%;
+  margin: 3px 10%;
+  opacity: .7;
+}
+
+#to {
+  padding: 5px;
+  box-sizing: border-box;
+  position: center;
+  width: 80%;
+  margin: 3px 10%;
+  opacity: .7;
+}
+
+#depart {
+  padding: 5px;
+  box-sizing: border-box;
+  position: center;
+  width: 80%;
+  margin: 3px 10%;
+  opacity: .7;
+}
+
+#return {
+  padding: 5px;
+  box-sizing: border-box;
+  position: center;
+  width: 80%;
+  margin: 3px 10%;
+  opacity: .7;
+}
+
+.nextButton {
+  max-width: 90px;
+  float: right;
+  margin: 10%;
+}
+
+@media screen and (max-width: 1000px) {
+  .navigation {
+    display: none;
+  }
+  .icons {
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #optionGrid{
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "upgradeSeat"
+      "searchForFlight";
+  }
+}
